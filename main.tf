@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
-  name     = var.rg_name
-  location = var.rg_location
+  name     = var.name
+  location = var.location
 
   tags = local.all_tags
 }
