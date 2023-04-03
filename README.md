@@ -1,4 +1,21 @@
 <!-- BEGIN_TF_DOCS -->
+## About the Module
+This Terraform module creates an Azure Resource Group with the specified configuration.
+
+## How to Use
+To use this module, include the following code in your Terraform configuration:
+```
+module "resource_group" {
+  source = "dasmeta/rg/azure"
+
+  name = "my-resource-group"
+  location = "eastus"
+  tags = {
+    environment = "dev"
+  }
+}
+
+```
 ## Requirements
 
 | Name                                                                      | Version |
@@ -74,6 +91,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_rg_location"></a> [rg\_location](#output\_rg\_location) | n/a |
-| <a name="output_rg_name"></a> [rg\_name](#output\_rg\_name) | n/a |
+| <a name="output_location"></a> [location](#output\_location) | n/a |
+| <a name="output_name"></a> [name](#output\_name) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
